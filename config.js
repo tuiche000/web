@@ -1,6 +1,6 @@
 const path=require('path');
-// const mode=process._argv.env=='dev'?'dev':'prod';
-const mode='dev';
+const mode=process._argv.env=='dev'?'dev':'prod';
+// const mode='dev';
 
 module.exports={
   apps: {
