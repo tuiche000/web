@@ -8,7 +8,6 @@
 
 # production
 /build
-/react_dist
 
 # misc
 .DS_Store
