@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./common/common_header.ejs') %>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="<%=STATIC%>/css/base.css">
+  <link rel="stylesheet" href="<%=STATIC%>/css/public.css">
+  <link rel="stylesheet" href="<%=STATIC%>/css/head.css">
+  <link rel="stylesheet" href="<%=STATIC%>/css/list.css">
+</head>
+<body>
+  <%- include('./common/header.ejs') %>
+
+
+
+  <div class="container poiList-wrap">
+        <div class="breadcrumbs">
+            <span>
+                <a href="">北京美团</a>
+                >
+                <a href="">北京美食</a>
+            </span>
+        </div>
+        <div class="left">
+            <div class="filter">
+                <div class="hasSelect clear-float">
+                    <span class="nor">已选条件</span>
+                    <span class="sel">代金券</span>
+                    <span class="clearAll">· 清除全部</span>
+                </div>
+                <div class="condition">
+                    <div class="cont">
+                        <div class="classification">分类</div>
+                        <div class="all on">全部</div>
+                        <ul class="more">
+                            <li>
+                                <a href="" class="on">代金券</a>
+                            </li>
+                            <li>
+                                <a href="">代金券</a>
+                            </li>
+                            <li>
+                                <a href="">代金券</a>
+                            </li>
+                            <li>
+                                <a href="">代金券</a>
+                            </li>
+                            <li>
+                                <a href="">代金券</a>
+                            </li>
+                            <li>
+                                <a href="">代金券</a>
+                            </li>
+                            <li>
+                                <a href="">代金券</a>
+                            </li>
+                            <li>
+                                <a href="">代金券</a>
+                            </li>
+                            <li>
+                                <a href="">代金券</a>
+                            </li>
+                            <li>
+                                <a href="">代金券</a>
+                            </li>
+                            <li>
+                                <a href="">代金券</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cont">
+                        <div class="classification">区域</div>
+                        <div class="all on">全部</div>
+                        <ul class="more">
+                            <li>
+                                <span class="hasSub">
+                                    <b>朝阳区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>海淀区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>丰台区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>西城区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>东城区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>昌平区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>石景山区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>通州区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>大兴区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>顺义区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>房山区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>密云区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>怀柔区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>延庆区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>门头沟区</b>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hasSub">
+                                    <b>平谷区</b>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cont">
+                        <div class="classification">用餐人数</div>
+                        <div class="all on">全部</div>
+                        <ul class="more" style="border-bottom:0;">
+                            <li>
+                                <a href="">单人餐</a>
+                            </li>
+                            <li>
+                                <a href="">双人餐</a>
+                            </li>
+                            <li>
+                                <a href="">3-4人</a>
+                            </li>
+                            <li>
+                                <a href="">5-6人</a>
+                            </li>
+                            <li>
+                                <a href="">7-8人</a>
+                            </li>
+                            <li>
+                                <a href="">9-10人</a>
+                            </li>
+                            <li>
+                                <a href="">10人以上</a>
+                            </li>
+                            <li>
+                                <a href="">其他</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popover" style="top: 170px;left: 158px;/* display: none; */">
+                        <div class="arrow"></div>
+                        <div class="p-content">
+                            <div class="popover-content clear-float">
+                                <span>怀柔区</span>
+                                <ul>
+                                    <li>
+                                        <a href="">全部</a>
+                                    </li>
+                                    <li>
+                                        <a href="">慕田峪长城</a>
+                                    </li>
+                                    <li>
+                                        <a href="">青龙峡</a>
+                                    </li>
+                                    <li>
+                                        <a href="">怀柔城区</a>
+                                    </li>
+                                    <li>
+                                        <a href="">雁西湖</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="list"></div>
+            <script>
+            const kw='<%=kw%>';
+
+            ReactDOM.render(
+              React.createElement(List, {kw}),
+              document.getElementById('list')
+            )
+            </script>
+        </div>
+        <div class="right">
+            <div class="guess-you-like">
+                <h4>猜你喜欢</h4>
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="pic">
+                                <div class="imgbox" style="height:100%;width:100%;">
+                                    <img src="https://img.meituan.net//msmerchant/8e9d07bac32473da09c402203cc5288c138748.jpg@188w_106h_1e_1c">
+                                </div>
+                            </div>
+                            <p class="name">旺顺阁鱼头泡饼（长阳半岛店）</p>
+                            <p class="desc">长阳镇</p>
+                            <p class="price"><b>￥</b>95.0</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="pic">
+                                <div class="imgbox" style="height:100%;width:100%;">
+                                    <img src="https://img.meituan.net//msmerchant/8e9d07bac32473da09c402203cc5288c138748.jpg@188w_106h_1e_1c">
+                                </div>
+                            </div>
+                            <p class="name">旺顺阁鱼头泡饼（长阳半岛店）</p>
+                            <p class="desc">长阳镇</p>
+                            <p class="price"><b>￥</b>95.0</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <%- include('./common/footer.ejs') %>
+</body>
+</html>

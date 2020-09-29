@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./common/common_header.ejs') %>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style media="screen">
+    #hrefs {display:none;}
+    </style>
+    <link rel="stylesheet" href="<%=STATIC%>/css/base.css">
+    <link rel="stylesheet" href="<%=STATIC%>/css/public.css">
+    <link rel="stylesheet" href="<%=STATIC%>/css/head.css">
+</head>
+<body>
+  <%- include('./common/header') %>
+
+  <!-- 分类框 -->
+  <div class="page index">
+      <div class="container">
+          <div class="banner-container clearfix">
+
+            <script>
+            const bannerContainerData={
+              catalog: <%- JSON.stringify(catalog) %>,
+              STATIC: '<%= STATIC %>',
+              city: '<%= city %>',
+              sliders: <%- JSON.stringify(sliders) %>,
+              banners: <%- JSON.stringify(banners) %>
+            };
+            </script>
+
+            <div id="banner_container">
+              <%- BannerContainer %>
+            </div>
+            <script>
+            (ReactDOM.hydrate||ReactDOM.render)(
+              React.createElement(BannerContainer, bannerContainerData),
+              document.getElementById('banner_container')
+            );
+            </script>
+
+
+              <div class="clearfix"></div>
+          </div>
+
+          <!-- 猜你喜欢 -->
+          <div class="recommend-container">
+              <div class="index-nav-container" style="background: linear-gradient(to right, rgb(18, 210, 198) 2%, rgb(14, 190, 212) 97%) rgb(18, 210, 198);">
+                  <ul>
+                      <li class="title nav-item mf-shang-hei-regular">
+                          猜你喜欢
+                      </li>
+                      <div class="nav-item active">
+                          为你甄选最适合的
+                      </div>
+                  </ul>
+              </div>
+              <div class="recommend-list">
+                  <a class="recommend-item">
+                      <div class="card-container">
+                          <div class="recommend-card-wrapper">
+                              <div class="img-box">
+                                  <img src="http://p0.meituan.net/msmerchant/8e9d07bac32473da09c402203cc5288c138748.jpg@428w_240h_1e_1c" class="image">
+                              </div>
+                              <div class="info-box">
+                                  <div class="title aligned"> 旺顺阁鱼头泡饼（长阳半岛店）</div>
+                                  <div class="score-line aligned">
+                                      <div class="score">
+                                          <div class="rate-stars">
+                                              <ul class="rate-stars-ul rate-stars-dark">
+                                                  <li><i class="iconfont icon-xingxing"></i></li>
+                                                  <li><i class="iconfont icon-xingxing"></i></li>
+                                                  <li><i class="iconfont icon-xingxing"></i></li>
+                                                  <li><i class="iconfont icon-xingxing"></i></li>
+                                                  <li><i class="iconfont icon-xingxing"></i></li>
+                                              </ul>
+                                              <ul class="rate-stars-ul rate-stars-light">
+                                                      <li><i class="iconfont icon-xingxing"></i></li>
+                                                      <li><i class="iconfont icon-xingxing"></i></li>
+                                                      <li><i class="iconfont icon-xingxing"></i></li>
+                                                      <li><i class="iconfont icon-xingxing"></i></li>
+                                                  </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="bottom-line aligned">
+                                      <div class="price-box">
+                                          <span>
+                                              <span class="yuan">￥</span>
+                                              <span class="price-number numfont">28.5</span>
+                                              <span class="price-desc">起</span>
+                                          </span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+                  <a class="recommend-item">
+                      <div class="card-container">
+                          <div class="recommend-card-wrapper">
+                              <div class="img-box">
+                                  <img src="http://p0.meituan.net/msmerchant/8e9d07bac32473da09c402203cc5288c138748.jpg@428w_240h_1e_1c" class="image">
+                              </div>
+                              <div class="info-box">
+                                  <div class="title aligned"> 旺顺阁鱼头泡饼（长阳半岛店）</div>
+                                  <div class="score-line aligned">
+                                      <div class="score">
+                                          <div class="rate-stars">
+                                              <ul class="rate-stars-ul rate-stars-dark">
+                                                  <li><i class="iconfont icon-xingxing"></i></li>
+                                                  <li><i class="iconfont icon-xingxing"></i></li>
+                                                  <li><i class="iconfont icon-xingxing"></i></li>
+                                                  <li><i class="iconfont icon-xingxing"></i></li>
+                                                  <li><i class="iconfont icon-xingxing"></i></li>
+                                              </ul>
+                                              <ul class="rate-stars-ul rate-stars-light">
+                                                      <li><i class="iconfont icon-xingxing"></i></li>
+                                                      <li><i class="iconfont icon-xingxing"></i></li>
+                                                      <li><i class="iconfont icon-xingxing"></i></li>
+                                                      <li><i class="iconfont icon-xingxing"></i></li>
+                                                  </ul>
+                                          </div>
+                                      </div>
+                                      <div class="comment-number">20个评价</div>
+                                  </div>
+                                  <div class="bottom-line aligned">
+                                      <div class="price-box">
+                                          <span>
+                                              <span class="yuan">￥</span>
+                                              <span class="price-number numfont">28.5</span>
+                                              <span class="price-desc">起</span>
+                                          </span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+
+          <!-- 美团导航 -->
+          <div class="botton-nav">
+              <div class="title">美团导航</div>
+              <div class="b-n-content">
+                  <div class="b-n-classification">
+                      <dt class="b-n-subtitle">热门城市</dt>
+                      <div class="b-n-sublist">
+                          <dd class="b-n-list-item"><a href="https://gz.meituan.com" title="广州" target="_blank">广州</a></dd>
+                          <dd class="b-n-list-item"><a href="https://qd.meituan.com" title="青岛" target="_blank">青岛</a></dd>
+
+                      </div>
+                  </div>
+                  <div class="b-n-classification">
+                      <dt class="b-n-subtitle">热门分类</dt>
+                      <div class="b-n-sublist">
+                          <dd class="b-n-list-item"><a href="https://gz.meituan.com" title="广州" target="_blank">广州<span class="nav-promotion">HOT</span></a></dd>
+                          <dd class="b-n-list-item"><a href="https://qd.meituan.com" title="青岛" target="_blank">青岛</a></dd>
+                          <dd class="b-n-list-item"><a href="https://gz.meituan.com" title="广州" target="_blank">广州</a></dd>
+                          <dd class="b-n-list-item"><a href="https://qd.meituan.com" title="青岛" target="_blank">青岛</a></dd>
+                          <dd class="b-n-list-item"><a href="https://gz.meituan.com" title="广州" target="_blank">广州</a></dd>
+                          <dd class="b-n-list-item"><a href="https://qd.meituan.com" title="青岛" target="_blank">青岛</a></dd>
+                          <dd class="b-n-list-item"><a href="https://gz.meituan.com" title="广州" target="_blank">广州</a></dd>
+                          <dd class="b-n-list-item"><a href="https://qd.meituan.com" title="青岛" target="_blank">青岛</a></dd>
+                          <dd class="b-n-list-item"><a href="https://gz.meituan.com" title="广州" target="_blank">广州</a></dd>
+                          <dd class="b-n-list-item"><a href="https://qd.meituan.com" title="青岛" target="_blank">青岛</a></dd>
+                          <dd class="b-n-list-item"><a href="https://gz.meituan.com" title="广州" target="_blank">广州</a></dd>
+                          <dd class="b-n-list-item"><a href="https://qd.meituan.com" title="青岛" target="_blank">青岛</a></dd>
+                          <dd class="b-n-list-item"><a href="https://gz.meituan.com" title="广州" target="_blank">广州</a></dd>
+                          <dd class="b-n-list-item"><a href="https://qd.meituan.com" title="青岛" target="_blank">青岛</a></dd>
+                          <dd class="b-n-list-item"><a href="https://gz.meituan.com" title="广州" target="_blank">广州</a></dd>
+                          <dd class="b-n-list-item"><a href="https://qd.meituan.com" title="青岛" target="_blank">青岛</a></dd>
+                          <dd class="b-n-list-item"><a href="https://gz.meituan.com" title="广州" target="_blank">广州</a></dd>
+                          <dd class="b-n-list-item"><a href="https://qd.meituan.com" title="青岛" target="_blank">门头沟区摄影写真</a></dd>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+  </div>
+
+  <%- include('./common/footer') %>
+
+</body>
+</html>
