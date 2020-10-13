@@ -1,5 +1,5 @@
 const path=require('path');
-const mode=process._argv.env=='dev'?'dev':'prod';
+const mode=process._argv ? (process._argv.env=='dev'?'dev':'prod') : "dev"
 // const mode='dev';
 
 module.exports={
