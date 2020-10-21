@@ -47,7 +47,14 @@ module.exports={
       user: 'root',
       password: mode=='dev'?'123456':'',
       database: 'meituan',
-    }
+    },
+    blog: {
+      host: '49.234.34.170',
+      port: 3306,
+      user: 'root',
+      password: '',
+      database: 'blog',
+    },
   },
 
   redis: {

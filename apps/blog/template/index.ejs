@@ -214,7 +214,9 @@
 		}
 	</style>
 </head>
-
+<!-- <script>
+JSON.stringify
+</script> -->
 <body id="period" class="home blog">
 	<a class="skip-content" href="#main">Press "Enter" to skip to content</a>
 	<div id="overflow-container" class="overflow-container">
@@ -230,7 +232,9 @@
 								<div class="post-container">
 									<div class='post-header'>
 										<h2 class='post-title'>
-											<a href="https://www.laruence.com/2020/07/13/6033.html">PHP8新特性之match表达式</a>
+											<a href="https://www.laruence.com/2020/07/13/6033.html">
+												<%= article_list[0]['title'] %>
+											</a>
 										</h2>
 										<div class="post-byline">Published on <a class='date'
 												href='https://www.laruence.com/2020/07'>13 July 2020</a> by <a
@@ -238,7 +242,8 @@
 												href='https://www.laruence.com/author/laruence'>laruence</a></div>
 									</div>
 									<div class="post-content">
-										<p>PHP8 alpha2发布了，最近引入了一个新的关键字：match, 这个关键字的作用跟switch有点类似。</p>
+										<%- article_list[0]['content] %>
+										<!-- <p>PHP8 alpha2发布了，最近引入了一个新的关键字：match, 这个关键字的作用跟switch有点类似。</p>
 										<p>这个我觉得还是有点意思，match这个词也挺好看，那么它是干啥的呢？</p>
 										<div class="post-categories"><span>Filed in </span><a
 												href="https://www.laruence.com/category/php8"
@@ -247,9 +252,8 @@
 												title="View all posts in PHP应用">PHP应用</a>, <a
 												href="https://www.laruence.com/category/notes"
 												title="View all posts in 随笔">随笔</a></div> <span class="comments-link">
-											<!--<i class="fa fa-comment" aria-hidden="true" title="comment icon"></i>-->
 											with <a href="https://www.laruence.com/2020/07/13/6033.html#comments">22
-												Comments</a></span>
+												Comments</a></span> -->
 									</div>
 								</div>
 							</article>

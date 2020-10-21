@@ -1,5 +1,6 @@
 const Router = require('koa-router');
 const { main } = require('@/mods/__redis');
+const { getArticleList } = require('@/models/blog/article');
 
 let router = new Router();
 
@@ -57,9 +58,11 @@ router.get('/', async ctx => {
     //catalog
     // let catalog = await Catalog.getAll();
     // let { banners, sliders } = await Banner.getAll();
-
+    const article_list = (await getArticleList()).rows;
     //
-    await ctx.render('index');
+    await ctx.render('index', {
+        article_list
+    });
 });
 
 // router.get('/list', async ctx => {
