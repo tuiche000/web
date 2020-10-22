@@ -29,7 +29,7 @@ module.exports={
       minifyHtml: false,
     },
     blog: {
-      version: 4,
+      version: 6,
       enabled: true,
       entry: path.resolve(__dirname, 'apps/blog'),
       templateDir: path.resolve(__dirname, 'apps/blog/template'),

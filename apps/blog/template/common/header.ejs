@@ -25,30 +25,21 @@
             <div id="menu-primary" class="menu-container menu-primary" role="navigation">
                 <nav class="menu">
                     <ul id="menu-primary-items" class="menu-primary-items">
+
                         <li id="menu-item-4873"
                             class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-4873">
                             <a href="http://www.laruence.com/" aria-current="page">主页</a></li>
+                        <% categorys.forEach(item=>{ %>
                         <li id="menu-item-4895"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4895"><a
-                                href="http://www.laruence.com/php-internal">React/Vue</a></li>
-                        <li id="menu-item-4876"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4876"><a
-                                href="http://www.laruence.com/php">App/小程序</a></li>
-                        <li id="menu-item-4897"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4897"><a
-                                href="http://www.laruence.com/jscss">JS/Es6</a></li>
-                        <li id="menu-item-4876"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4876"><a
-                                href="http://www.laruence.com/php">Node</a></li>
-                        <li id="menu-item-4885"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4885"><a
-                                href="http://www.laruence.com/notes">后端其他服务</a></li>
+                                href="http://www.laruence.com/php-internal"><%= item.title %></a></li>
+                        <% }) %>
                         <li id="menu-item-4874"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4874"><a
                                 href="https://www.laruence.com/guestbook">留言</a></li>
-                        <li id="menu-item-5362"
+                        <!-- <li id="menu-item-5362"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5362"><a
-                                href="https://www.laruence.com/sitemap">博客地图</a></li>
+                                href="https://www.laruence.com/sitemap">博客地图</a></li> -->
                     </ul>
                 </nav>
             </div>
