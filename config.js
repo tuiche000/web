@@ -22,7 +22,7 @@ module.exports={
       minifyHtml: false,
     },
     api: {
-      version: 3,
+      version: 4,
       enabled: true,
       entry: path.resolve(__dirname, 'apps/api'),
       port: 8082,
