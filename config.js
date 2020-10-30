@@ -22,7 +22,7 @@ module.exports={
       minifyHtml: false,
     },
     api: {
-      version: 4,
+      version: 1,
       enabled: true,
       entry: path.resolve(__dirname, 'apps/api'),
       port: 8082,
@@ -42,10 +42,10 @@ module.exports={
 
   databases: {
     web: {
-      host: 'localhost',
+      host: '49.234.34.170',
       port: 3306,
       user: 'root',
-      password: mode=='dev'?'123456':'',
+      password: mode=='dev'?'':'',
       database: 'meituan',
     },
     blog: {

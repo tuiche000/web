@@ -15,7 +15,6 @@ password: string
 */
 router.post('/login', async ctx => {
   const { username, password } = ctx.request.fields;
-
   let rows = await web.query(`SELECT * FROM admin_table WHERE username=?`, [username]);
   if (rows.length == 0) {
     ctx.status = 400;
